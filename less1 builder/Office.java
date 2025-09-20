@@ -1,7 +1,7 @@
 public class Office{
 
     private final String name;
-    private final int age;
+    private int age;
     private final String email;
     private final String position;
 
