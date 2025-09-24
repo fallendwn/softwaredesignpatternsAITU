@@ -15,10 +15,10 @@ public class Main {
         IWorker samsungWorker = samsungFactory.createWorker();
         IDirector samsungDirector = samsungFactory.createDirector();
 
-        samsungWorker.setName("Kalavan");
-        System.out.println(samsungWorker.getName());
 
-        samsungDirector.setSalary(4500);
+        System.out.println(samsungDirector.getName());
+
+
         System.out.println(samsungDirector.getSalary());
 
     }

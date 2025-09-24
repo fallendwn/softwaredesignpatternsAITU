@@ -1,9 +1,9 @@
 public class AppleDirector implements IDirector{
     
-    private int age;
-    private String name;
-    private String email;
-    private int salary;
+    private int age = 17;
+    private String name = "Privet";
+    private String email = "aoala";
+    private int salary = 350;
     @Override
     public void setAge(int age){
 

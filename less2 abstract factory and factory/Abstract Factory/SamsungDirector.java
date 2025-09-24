@@ -1,10 +1,10 @@
 public class SamsungDirector implements IDirector {
     
 
-    private int age;
-    private String name;
-    private String email;
-    private int salary;
+    private int age = 300;
+    private String name = "salam";
+    private String email = "ajaja";
+    private int salary = 200;
     @Override
     public void setAge(int age){
 
