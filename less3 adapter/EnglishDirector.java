@@ -7,7 +7,7 @@ public class EnglishDirector {
 
         TranslatorAdapter VityaTranslator = new TranslatorAdapter(EgorEngineer);
 
-        VityaTranslator.speakEnglish("Hello my English friend!");
+        VityaTranslator.speakEnglish("Hello my English comrade!");
 
 
     }
