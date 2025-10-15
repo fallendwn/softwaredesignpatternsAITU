@@ -1,6 +1,6 @@
 public abstract class Document {
 
-    protected IPrinter printer;
+    IPrinter printer;
 
     public Document(IPrinter printer){
 
