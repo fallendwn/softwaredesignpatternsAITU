@@ -1,14 +1,14 @@
-public class RussianSubjectDecorator extends TeacherDecorator{
-    public RussianSubjectDecorator(ITeacher teacher){
+public class RussianSubjectDecorator extends WorkerDecorator{
+    public RussianSubjectDecorator(ISchoolWorker worker){
 
-        super(teacher);
+        super(worker);
 
     }
 
     @Override
-    public String whatLessonsCanTeach(){
+    public String whatAmIDoing(){
         
-        return teacher.whatLessonsCanTeach() + ", Russian";
+        return worker.whatAmIDoing() + ", can teach Russian";
 
     }
 

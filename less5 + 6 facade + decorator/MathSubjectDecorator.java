@@ -1,16 +1,16 @@
-public class MathSubjectDecorator extends TeacherDecorator{
+public class MathSubjectDecorator extends WorkerDecorator{
 
     
-    public MathSubjectDecorator(ITeacher teacher){
+    public MathSubjectDecorator(ISchoolWorker worker){
 
-        super(teacher);
+        super(worker);
 
     }
 
     @Override
-    public String whatLessonsCanTeach(){
+    public String whatAmIDoing(){
         
-        return teacher.whatLessonsCanTeach() + ", Math";
+        return worker.whatAmIDoing() + ", can teach Math";
 
     }
 
