@@ -1,4 +1,4 @@
-public class WorkerDecorator implements ISchoolWorker{
+public abstract class WorkerDecorator implements ISchoolWorker{
     
     protected ISchoolWorker worker;
 
