@@ -1,7 +1,7 @@
 public class SecondFloor implements IFloor {
  
     
-    private String message = "First Floor";
+    private String message = "Second Floor";
 
 
     @Override

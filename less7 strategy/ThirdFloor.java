@@ -1,6 +1,6 @@
 public class ThirdFloor implements IFloor{
 
-    private String message = "First Floor";
+    private String message = "Third Floor";
 
     @Override
     public String useFloor(){
