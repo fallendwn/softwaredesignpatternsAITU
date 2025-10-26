@@ -1,9 +1,22 @@
 public class FirstFloor implements IFloor {
-    
+    private String message = "First Floor";
+
     @Override
     public String useFloor(){
-        String currentFloor = "First Floor";
-        return currentFloor;
+
+        return message;
+
+    }
+    
+    public String getMessage(){
+
+        return message;
+
+    }
+
+    public void setMessage(String newMessage){
+
+        this.message = newMessage;
 
     }
 

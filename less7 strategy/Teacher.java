@@ -1,15 +1,19 @@
 public class Teacher {
     
-    private IFloor StrategyFloor;
+    private IFloor floorStrategy;
     public void setStrategy(IFloor strategy){
 
-        this.StrategyFloor = strategy;
+        this.floorStrategy = strategy;
 
     }
 
     public String selectFloor(){
+        if(floorStrategy == null){
 
-        return StrategyFloor.useFloor();
+            return "no floor selected";
+
+        }
+        return floorStrategy.useFloor();
 
     }
 
