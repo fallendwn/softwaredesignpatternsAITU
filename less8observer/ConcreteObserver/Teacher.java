@@ -1,6 +1,6 @@
-package ConcreteSubject;
+package ConcreteObserver;
 
-import Subject.IAnnouncementListener;
+import Observer.IAnnouncementListener;
 import java.util.ArrayList;
 
 public class Teacher implements IAnnouncementListener{

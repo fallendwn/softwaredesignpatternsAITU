@@ -1,6 +1,6 @@
-import ConcreteObserver.Principal;
-import ConcreteSubject.Student;
-import ConcreteSubject.Teacher;
+import ConcreteObserver.Student;
+import ConcreteObserver.Teacher;
+import ConcreteSubject.Principal;
 
 
 public class Main{

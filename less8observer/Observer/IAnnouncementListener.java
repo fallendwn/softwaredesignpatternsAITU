@@ -1,4 +1,4 @@
-package Subject;
+package Observer;
 
 
 public interface IAnnouncementListener {

@@ -1,9 +1,11 @@
-package ConcreteObserver;
+package ConcreteSubject;
 
-import ConcreteSubject.Student;
-import ConcreteSubject.Teacher;
-import Observer.ISchoolAnnouncementBoard;
-import Subject.IAnnouncementListener;
+
+
+import ConcreteObserver.Student;
+import ConcreteObserver.Teacher;
+import Observer.IAnnouncementListener;
+import Subject.ISchoolAnnouncementBoard;
 import java.util.ArrayList;
 
 

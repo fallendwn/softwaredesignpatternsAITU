@@ -1,6 +1,6 @@
-package Observer;
+package Subject;
 
-import Subject.IAnnouncementListener;
+import Observer.IAnnouncementListener;
 
 public interface ISchoolAnnouncementBoard{
 

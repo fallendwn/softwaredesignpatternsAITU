@@ -1,6 +1,6 @@
-package ConcreteSubject;
+package ConcreteObserver;
 
-import Subject.IAnnouncementListener;
+import Observer.IAnnouncementListener;
 
 public class Student implements IAnnouncementListener{
 
