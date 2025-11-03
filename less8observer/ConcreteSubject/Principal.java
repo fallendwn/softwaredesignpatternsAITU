@@ -2,7 +2,6 @@ package ConcreteSubject;
 
 
 
-import ConcreteObserver.Student;
 import ConcreteObserver.Teacher;
 import Observer.IAnnouncementListener;
 import Subject.ISchoolAnnouncementBoard;
@@ -16,27 +15,19 @@ public class Principal implements  ISchoolAnnouncementBoard{
 
 
     @Override
-    public void attachStudent(IAnnouncementListener student){
-        if(student instanceof Student){attachedStudents.add(student);}
-        else{System.out.println("You tried to attach teacher to a student.");}
-    }
-    
-    @Override
-    public void detachStudent(IAnnouncementListener student){
-        if(attachedStudents.contains(student)){attachedStudents.remove(attachedStudents.indexOf(student));}
-        else{System.out.println("You tried to detach non-existent student");}
-    }
+    public void attach(IAnnouncementListener person){
 
-    @Override
-    public void attachTeacher(IAnnouncementListener teacher){
-        if (teacher instanceof Teacher){attachedTeachers.add(teacher);}
-        else{System.out.println("You tried to attach student to a teacher.");}
+        if (person instanceof Teacher){attachedTeachers.add(person);}
+        else{attachedStudents.add(person);}
+
     }
     
     @Override
-    public void detachTeacher(IAnnouncementListener teacher){
-        if(attachedTeachers.contains(teacher)){attachedTeachers.remove(attachedTeachers.indexOf(teacher));}
-        else{System.out.println("You tried to detach non-existent teacher");}
+    public void detach(IAnnouncementListener person){
+
+        if (person instanceof Teacher){attachedTeachers.remove(person);}
+        else{attachedStudents.remove(person);}
+
     }
 
     @Override
