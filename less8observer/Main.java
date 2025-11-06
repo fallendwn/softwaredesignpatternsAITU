@@ -22,14 +22,14 @@ public class Main{
 
 
 
-        principal.notifyStudents("Tomorrow is a holiday");
+        // principal.notifyStudents("Tomorrow is a holiday");
 
-        principal.notifyTeachers("Please make СОЧ by Friday.");
+        // principal.notifyTeachers("Please make СОЧ by Friday.");
 
-        principal.notifyAll("School sadly will start at 9 AM on Monday.");
+        // principal.notifyAll("School sadly will start at 9 AM on Monday.");
 
 
-        principal.detach(student1);
+        // principal.detach(student1);
 
         principal.notifyStudents("Hello Oleg");
 

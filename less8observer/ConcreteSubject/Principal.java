@@ -32,21 +32,16 @@ public class Principal implements  ISchoolAnnouncementBoard{
 
     @Override
     public void notifyTeachers(String message){
-
-        for(IAnnouncementListener teacher : attachedTeachers){
-
-            teacher.update(message);
-
-        }
+        //
 
     }
 
     @Override
     public void notifyStudents(String message){
 
-        for(IAnnouncementListener student : attachedStudents){
+        for(int i = attachedStudents.size() -1 ; i >= 0 ; i--){
 
-            student.update(message);
+            attachedStudents.get(i).update(message);
 
         }
 
