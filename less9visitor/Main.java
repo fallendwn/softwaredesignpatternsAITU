@@ -1,5 +1,6 @@
 import ConcreteElement.*;
 import ConcreteVisitor.PayrollVisitor;
+import ConcreteVisitor.ReportCardVisitor;
 import ConcreteVisitor.StudentAverageVisitor;
 import Element.ISchoolElement;
 import java.util.ArrayList;
@@ -7,29 +8,29 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         
-        Student alice = new Student("Alice", 14);
-        alice.addGrade(85);
-        alice.addGrade(92);
-        alice.addGrade(79);
+        Student Valera = new Student("Valera", 14);
+        Valera.addGrade(85);
+        Valera.addGrade(92);
+        Valera.addGrade(79);
 
         Student bob = new Student("Bob", 15);
         bob.addGrade(60);
         bob.addGrade(70);
 
-        Student charlie = new Student("Charlie", 14);
+        Student Misha = new Student("Misha", 14);
 
         Teacher mrIvanov = new Teacher("Mr. Ivanov", 200000, 18); 
         Teacher msPetrova = new Teacher("Ms. Petrova", 220000, 15);
 
         Classroom class101 = new Classroom(101);
-        class101.addStudent(alice);
+        class101.addStudent(Valera);
         class101.addStudent(bob);
-        class101.addStudent(charlie);
+        class101.addStudent(Misha);
 
         ArrayList<ISchoolElement> elements = new ArrayList<>();
-        elements.add(alice);
+        elements.add(Valera);
         elements.add(bob);
-        elements.add(charlie);
+        elements.add(Misha);
         elements.add(mrIvanov);
         elements.add(msPetrova);
         elements.add(class101);
@@ -37,12 +38,12 @@ public class Main {
         
 
         ArrayList<Student> students = new ArrayList<>();
-        students.add(alice);
+        students.add(Valera);
         students.add(bob);
 
         PayrollVisitor payrollVisitor = new PayrollVisitor();
 
-        ConcreteVisitor.ReportCardVisitor reportCardVisitor = new ConcreteVisitor.ReportCardVisitor();
+        ReportCardVisitor reportCardVisitor = new ReportCardVisitor();
 
         for (ISchoolElement el : elements) {
             el.accept(payrollVisitor);
@@ -64,4 +65,4 @@ public class Main {
 
 
     }
-}
+} 

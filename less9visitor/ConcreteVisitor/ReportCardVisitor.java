@@ -17,9 +17,7 @@ public class ReportCardVisitor implements ISchoolVisitor {
 
             Student currentStudent  = studentList.get(i);
             String gradesAsString = currentStudent.getGrades().toString();
-            System.out.println(i + ". Student: " + currentStudent.getName() + " has grades " + gradesAsString);
-
-
+            System.out.println((i+1) + ". Student: " + currentStudent.getName() + " has grades " + gradesAsString);
 
         }
 

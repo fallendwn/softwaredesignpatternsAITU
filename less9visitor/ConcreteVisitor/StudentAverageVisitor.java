@@ -18,9 +18,12 @@ public class StudentAverageVisitor implements ISchoolVisitor {
         for(int i = 0 ; i < amountGrades; i ++){
 
             total+=grades.get(i);
+            total+=1;
 
         }
-        System.out.println(total/amountGrades );
+
+        System.out.println(total/amountGrades);
+
 
 
     }
